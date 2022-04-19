@@ -1,4 +1,5 @@
 var currencyEl=document.querySelector("#currency");
+var selectEl=document.querySelector("#form")
 
 
 
@@ -23,7 +24,9 @@ var getCurrency = function (){
 
 getCurrency()
 
-var displayCurrency=function(){
+var displayCurrency=function(event){
+    event.preventDefault()
+    
     var currencyDisEL=document.createElement("p")
     currencyDisEL.className="currency-display"
     currencyDisEL.setAttribute=("id", "currency-display")
@@ -34,7 +37,9 @@ var displayCurrency=function(){
 }
 
 
-function favTutorial() {  
-    var mylist = document.getElementById("#myList");  
-    document.getElementById("#currency-display").value = mylist.options[mylist.selectedIndex].text;  
-    } 
+// function favTutorial() {  
+//     var mylist = document.getElementById("#myList");  
+//     document.getElementById("#currency-display").value = mylist.options[mylist.selectedIndex].text;  
+//     } 
+
+selectEl.addEventListener("submit", displayCurrency)
