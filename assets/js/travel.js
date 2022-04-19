@@ -32,6 +32,7 @@ var displayCurrency=function(event){
     currencyDisEL.setAttribute=("id", "currency-display")
     currencyDisEL.textContent="USD=6.37RMB"
 
+    currencyEl
     //append currency display to currency section.
     currencyEl.appendChild(currencyDisEL);
 }
