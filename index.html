@@ -6,7 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-
+<!-- head element should ennd here -->
+<!-- script tag should be at bottom of page in body element -->
 
         <!-- Javascrip that needs to be implemented in th JS file -->
         <script>  
@@ -69,7 +70,7 @@
                                 <div class="text-box-selection">
                                     <p>Reserve for Drop Down List</p>
                                     <!-- Insert the Drop Box Selection here! -->
-                                    <form>  
+                                    <!-- <form>  
                                         <b> Select a city </b>  
                                         <select id = "myList" onchange = "favTutorial()" >  
                                         <option> ---Choose a city to visit--- </option>  
@@ -78,7 +79,17 @@
                                         <option> Japan </option>  
                                         <option> China </option>  
                                         </select>
-                                    </form>  
+                                    </form>   -->
+                                    <input
+                                    id="input"
+                                    aria-label="Enter city name "
+                                    type="text"
+                                    class="search-input"
+                                    placeholder="Enter city name"
+                                    autofocus
+                                    required
+                                />
+                                <button id="submit" type="button" class="search-button"  aria-label="search">Search </button>
                                 </div>
 
                                 <div class="time-zone-selected">
@@ -150,15 +161,15 @@
                                 <div class="text-box picture-position-area">
                                     <p>Reserved for a possible picture to make it look nicer.</p>
                                 </div>
-                                
-                                <div class="text-box">
+                                <div id="results"></div>
+                                <!-- <div class="text-box">
                                     <p class="city-display city-info">
                                         It'll display an information for the city in this area.  Just in case, what needs to happen is that a paragraph would be displayed here tellin the information of the city.  What's important, though, is not to have this box increase in size.  Rather, we need to have some sort of scroll on the side in case someone wants to read more information on the city.  At the end of this, it'll also display the link on the bottom of the text.  It'll be preseved here:
                                         <br/>
                                         <br/>
                                         Have the link display here!
                                     </p>
-                                </div>
+                                </div> -->
                                 
 
                             </div>
@@ -175,5 +186,7 @@
 
         
     </head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./assets/js/index.js"></script>
 
 </html>
