@@ -52,16 +52,16 @@
                                 <!-- Insert the Drop Box Selection here! -->
                                 <form id = "form" class="city-select">  
                                     <b> Select a city </b>  
-                                    <select   name="City-choice" class="select-dropdown">  
-                                        <option id = "myList" value="" selected disabled>Choose the City</option>
+                                    <select id = "mylist" name="City-choice" class="select-dropdown">  
+                                        <option  value="" selected disabled>Choose the City</option>
                                         <!-- Tokyo select connect to Japanese yen -->
-                                        <option  value="Tokyo">Tokyo</option>
+                                        <option  id="tokyo" value="Tokyo">Tokyo</option>
                                         <!-- London select connect to Pound Sterling  -->
-                                        <option  value="London">London</option>
+                                        <option  id="london" value="London">London</option>
                                         <!-- Sydney select connect to the Australian dollar -->
-                                        <option  value="Sydney">Sydney</option>                                         
+                                        <option  id="sydney" value="Sydney">Sydney</option>                                         
                                     </select>
-                                    <button type="submit" class="btn">Search</button>
+                                    <!-- <button type="submit" class="btn">Search</button> -->
                                 </form>                                
                             </div>
 
@@ -70,7 +70,7 @@
                             </div>
 
                             <div class="currency-box" id="currency">
-                                <p>US to XX Currency</p>
+                                <p id="currencyDisplay">Currency</p>
                                 <!-- Text Box for Currency -->
                             </div>
 
