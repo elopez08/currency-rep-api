@@ -46,4 +46,21 @@ var currencyHandler=function(event){
 
 //dropdown menu connect to currency division
  selectEl.addEventListener("change", currencyHandler);
+var lightmode=true
+var dark=document.querySelector(".slider") 
+var darkmode=function(event){
+if(lightmode===true){
+   document.querySelector("header").style.backgroundColor="black"
+   lightmode=false
+   document.querySelector("section").style.backgroundColor="black"
+   lightmode=false
+} else{
+    document.querySelector("header").style.backgroundColor="blue"
+    lightmode=true
+    document.querySelector("section").style.backgroundColor="blue"
+    lightmode=true
+}
 
+}
+
+dark.addEventListener("click",darkmode)

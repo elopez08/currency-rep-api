@@ -83,7 +83,9 @@ header h1 {
 body {
     background-color: #454545;
 }
-
+.darkmode{
+    background-color: black;
+}
 /* =========== End of Header =========== */
 
 /* =========== Start of Section Declaration =========== */
