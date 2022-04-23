@@ -1,0 +1,391 @@
+/*
+    The base skeleton if you need to make another section
+*/
+/* =========== Start of =========== */
+/* =========== End of =========== */
+
+
+
+/* =========== Start of Universal Declaration =========== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*background-color: rgb(165, 168, 202);*/  /*This property is making ALL that has a background set to this color, including text.  Find a way around this*/
+}
+
+:root{
+
+    --main-lightteal-color: #67d6d6; /*use:  var(--main-white-color); */
+    --font-family-one: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*use: var(--font-family-one); */
+    --display-inline: inline-block; /*use: var(--display-inline); */
+    --font-color-one: rgb(58, 55, 243);    /*Use: var(--font-color-one); */
+    --dark-color: #454545; /*use: var(--dark-color); */
+    --font-color-main: white; /*use: var(--font-color-main);*/
+    --color-scheme-two: rgb(31, 29, 80); /*use: var(--color-scheme-two)*/
+
+}
+
+a {
+    color: var(--font-color-main);     /* Changing the link color to this */
+    text-decoration: none;              /* This is to ensure if there's a line or not */
+}
+
+p, h1, h2, h3 {
+    padding-left: 10px;
+    font-family: var(--font-family-one);
+    color: var(--font-color-main)
+}
+
+/* =========== End of Universal Declaration =========== */
+
+
+/* =========== Start of Header =========== */
+
+
+
+header {
+
+    width: 100%;
+    background-color: var(--font-color-one);
+    padding: 20px 1% 20px 1%;
+    font-family: var(--font-family-one);
+    color: var(--dark-color);
+
+    /*This is what's needed to have the text move.  Remember the following:
+    
+    display:flex causes the purple line
+    justify-content: space-between adds spacing on the contents
+    flex-wrap:wrap: if there is no space, it'll go to another line
+
+    */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.title-spacing{
+    height: 70px;
+}
+
+header h1 {
+
+    /*We're taking out the inline display*/
+    /*display: var(--display-inline);*/
+    padding: 5px 15px 0 15px;
+    font-size: 48px;
+
+}
+
+
+
+body {
+    background-color: #454545;
+}
+.darkmode{
+    background-color: black;
+}
+/* =========== End of Header =========== */
+
+/* =========== Start of Section Declaration =========== */
+
+section {
+    background-color: #454545;
+}
+
+/* =========== End of Section Declaration =========== */
+
+/* =========== Start of Content =========== */
+
+.content {
+    margin-left: 5px;   
+}
+
+.content h2 {
+    font-family: var(--font-family-one);
+    text-align:right;
+    font-size: 35px;
+    top: 8px;
+    right: 16px;
+}
+
+/* =========== End of Content =========== */
+
+/* =========== Start of Article Declaration =========== */
+
+article {
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    /*I'm making an attempt to have the flex property added here.  If we do, all the contents within the article should fall in place*/
+    display: flex;
+    /*We're not aligning the contents here.  The columns are to the left and the contents are at the side of the right*/
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+
+}
+
+
+/* =========== End of Article Declaration =========== */
+
+/* =========== Start of Article Design =========== */
+
+.about-me, .weather-layout, .contact-me {
+    /*overflow: auto;*/
+    margin: 0 0 30px 20px;
+}
+
+.about-me aside, .weather-layout aside{
+    /*flex:1;*/
+    width: 400px;
+    padding: 10px 10px 5px 10px;
+    float: left;
+    /*border-right-style: solid;*/
+
+}
+
+
+.about-me figure, .weather-layout figure {
+
+    /*
+    This is creating an error.  The reason why is because we're not really flexing this property.  If anything, only one should be doing this, which is the section involving the work figure
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    */
+    padding: 10px 0 0px 10px;
+}
+
+/*We need one more value that needs to be added.  The box, itself, has various of layers that deals with the work.  We need to make sure that also is flex*/
+
+.weather-layout figure {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.work-card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    flex: 0 0 98%;
+    background-color: var(--font-color-one);
+}
+
+.work-card-two {
+    height: 500px;
+}
+
+.weather-text{
+    position: absolute;
+    bottom: 0%;
+
+}
+.weather-picture-preserve{
+    position: absolute;
+    top: 0%;
+
+}
+
+.photo {
+
+    /*Adding to see if this highlighted thing works.  I'm making the overall card a relative position: */
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.resizephoto {
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+/*I'm making an attempt to have this change color when it is overlaying the picture*/
+.overlay {
+
+    position: absolute;
+    background-color:rgb(63, 144, 91);
+    opacity: 0.3;
+
+}
+
+/*Properties for the Drop Down List*/
+.text-box-selection{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-scheme-two);
+
+}
+
+/*Properties for the Time Zone Selected*/
+.time-zone-selected{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-scheme-two);
+
+}
+
+
+/*Properties for the Currency Box*/
+.currency-box{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 26%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-scheme-two);
+
+}
+
+
+.text-box{
+    width: 100%;
+    /*height: 35%;*/
+    padding: 15px 0 15px 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-scheme-two);
+
+}
+
+.text-box-paragraph {
+    width: 100%;
+    /*height: 35%;*/
+    padding: 15px 0 15px 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+
+.text-box h3, .text-box p{
+    display: var(--display-inline);
+
+}
+
+.city-para{
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    top: 0px;
+    padding-left: 15px;
+}
+
+.picture-position-area{
+    top: 200px;
+}
+
+.city-info {
+    background: var(--color-scheme-two);
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    top: 380px;
+    overflow: scroll;
+}
+
+
+
+/*
+    Okay.  This is going to be a bit tricky to explain, but here's how it goes:
+    We need to have this property WITHIN the div.  I made a new div and called this one 'photo'.  The container 'photo' has a relative position.  Inside said photo class, there is an image that is being identified.  You need to do this so that only the picture is affected.  Next, we have this set of code that's above this line that deals with what it needs to do when the overlay is called.  For this, we have it set to absolute so it can overlay the photo itself.  I have it set to background-color yellow.  Next, we have the next set of lines to be the overlay effect.
+
+    On this one, we needed to have the position set to 0 on the bottom, left, and right.  We need to do this so that when it is called, it knows where to start.  The reason why is because if we had a transition, it'll start from there and then it'll start filling the overall picture.  The height of it is at max, so it'll fill the whole thing.
+
+    One thing:  Right now, we're missing an opacity property.  There's one more thing to note:  The picture itself isn't exactly a square.  It's a rectangle that is fit inside the column section.  What this means is that part of the picture is not filled on the column itself.  So when the transition happens, it'll color the overall thing, INCLUDING THE SPACE that isn't filled by the image.
+
+*/
+.photo:hover .overlay{
+      bottom:0;
+      left: 0;
+      right: 0;
+      height:100%;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* =========== Start of Contact Me for the Content =========== */
+/* =========== End of Contact Me for the Content =========== */
