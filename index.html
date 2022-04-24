@@ -1,49 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-
-
-        <!-- Javascrip that needs to be implemented in th JS file -->
-        <script>  
-            function favTutorial() {  
-            var mylist = document.getElementById("myList");  
-            document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;  
-            }  
-        </script>  
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Add style sheet -->
+    <title>Traveler's Advisor</title>
+</head>
+<body>   
         <!-- For the head of the site that has the "Travel Advisor" -->
         <header>
-
-            
-            <link rel="stylesheet" href="./assets/css/style.css"> <!-- Add style sheet -->
-
             <div class="title-spacing">
                 <h1>
                     Travel Advisor
                 </h1>
             </div>
+                        <!-- Attempting to apply te slide button -->
 
-        </header>
+            <!-- Round Switch -->
+            
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
 
-            <!-- Language of the ASCII -->
-            <meta charset="UTF-8" />
 
-            <link rel="stylesheet" href="./assets/css/style.css"> <!-- Add style sheet -->
 
-            <!-- Apple created a meta element to address mobile screen -->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-            <!-- Name of the website-->
-            <title>
-                Traveler's Advisor
-            </title>
-
+        </header>  
+        
             <!-- Section that will have everything beneath the Traveler Advisor Banner -->
             <section class="content">
 
@@ -66,29 +52,32 @@
                                     
                                 </div>
 
-                                <div class="text-box-selection">
-                                    <p>Reserve for Drop Down List</p>
-                                    <!-- Insert the Drop Box Selection here! -->
-                                    <form>  
-                                        <b> Select a city </b>  
-                                        <select id = "myList" onchange = "favTutorial()" >  
-                                        <option> ---Choose a city to visit--- </option>  
-                                        <option> France </option>  
-                                        <option> England </option>  
-                                        <option> Japan </option>  
-                                        <option> China </option>  
-                                        </select>
-                                    </form>  
-                                </div>
+                            <div class="text-box-selection">
+                                <p>Reserve for Drop Down List</p>
+                                <!-- Insert the Drop Box Selection here! -->
+                                <form id = "form" class="city-select">  
+                                    <b> Select a city </b>  
+                                    <select id = "mylist" name="City-choice" class="select-dropdown">  
+                                        <option  value="" selected disabled>Choose the City</option>
+                                        <!-- Tokyo select connect to Japanese yen -->
+                                        <option  id="tokyo" value="Tokyo">Tokyo</option>
+                                        <!-- London select connect to Pound Sterling  -->
+                                        <option  id="london" value="London">London</option>
+                                        <!-- Sydney select connect to the Australian dollar -->
+                                        <option  id="sydney" value="Sydney">Sydney</option>                                         
+                                    </select>
+                                    <!-- <button type="submit" class="btn">Search</button> -->
+                                </form>                                
+                            </div>
 
                                 <div class="time-zone-selected">
                                     <p>Time Zone Preserved</p>
                                 </div>
 
-                                <div class="currency-box">
-                                    <p>US to XX Currency</p>
-                                    <!-- Text Box for Currency -->
-                                </div>
+                            <div class="currency-box" id="currency">
+                                <p id="currencyDisplay">Currency</p>
+                                <!-- Text Box for Currency -->
+                            </div>
 
                             </div>
                             
@@ -173,7 +162,10 @@
             </section>
 
 
-        
-    </head>
+    
 
+
+
+    <script src="./assets/js/travel.js"></script>
+</body>
 </html>
