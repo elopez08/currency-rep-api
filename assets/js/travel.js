@@ -55,9 +55,9 @@ if(lightmode===true){
    document.querySelector("section").style.backgroundColor="black"
    lightmode=false
 } else{
-    document.querySelector("header").style.backgroundColor="blue"
+    document.querySelector("header").style.backgroundColor="#3A37F3"
     lightmode=true
-    document.querySelector("section").style.backgroundColor="blue"
+    document.querySelector("section").style.backgroundColor="white"
     lightmode=true
 }
 
