@@ -388,5 +388,10 @@ article {
     border-radius: 50%;
   }
 
+  .search{
+      display: Flex;
+      justify-content: center;
+      align-items: center;
+  }
 /* =========== Start of Contact Me for the Content =========== */
 /* =========== End of Contact Me for the Content =========== */
