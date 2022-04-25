@@ -29,7 +29,7 @@ Something about the layout:  Originally, we're going to have the user start with
 All the interaction would initially start with selecting the city.  Once it has been called, the rest of the information would then be displayed in accordance to the window.
 
 
-#Dropdown button and Currency API
+**#Dropdown button and Currency API**
 
 Create dropdown button for 3 cities - Tokyo, London and Sydney.
 
