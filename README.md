@@ -12,7 +12,7 @@ proposal - https://docs.google.com/document/d/19FxMvH46WPICGhEOWCgLYL1HmLok83oTG
 
 Screenshot:
 
-![Submit Score](https://github.com/elopez08/Quiz-Project/blob/main/assets/image/sreenshot-layout.PNG)
+![Screenshot Layout](https://github.com/elopez08/currency-rep-api/blob/develop/assets/images/screenshot-layout.PNG)
 
 The layout would include the following:
 
