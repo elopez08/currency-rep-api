@@ -27,3 +27,13 @@ The idea behind is so it isn't too complicated for the user to be able to browse
 Something about the layout:  Originally, we're going to have the user start with the light mode, so the colors would be bright for the users to see.  The implementation of the dark mode is just in case the user prefers a more darker color to ease the eye tension.
 
 All the interaction would initially start with selecting the city.  Once it has been called, the rest of the information would then be displayed in accordance to the window.
+
+
+#Dropdown button and Currency API
+
+Create dropdown button for 3 cities - Tokyo, London and Sydney.
+
+Using currency api - https://github.com/fawazahmed0/currency-api#readme
+
+Find out the exchange rate we need using fetch function to get response. Successfully displayed on website. 
+
