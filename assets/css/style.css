@@ -20,9 +20,9 @@
     --font-family-one: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*use: var(--font-family-one); */
     --display-inline: inline-block; /*use: var(--display-inline); */
     --font-color-one: rgb(58, 55, 243);    /*Use: var(--font-color-one); */
-    --dark-color: #454545; /*use: var(--dark-color); */
-    --font-color-main: white; /*use: var(--font-color-main);*/
-    --color-scheme-two: rgb(31, 29, 80); /*use: var(--color-scheme-two)*/
+    --background-color: #ffffff; /*use: var(--background-color); */
+    --font-color-main: black; /*use: var(--font-color-main);*/
+    --text-box-color: rgb(212, 212, 212); /*use: var(--text-box-color)*/
 
 }
 
@@ -50,7 +50,7 @@ header {
     background-color: var(--font-color-one);
     padding: 20px 1% 20px 1%;
     font-family: var(--font-family-one);
-    color: var(--dark-color);
+    color: var(--background-color);
 
     /*This is what's needed to have the text move.  Remember the following:
     
@@ -81,7 +81,7 @@ header h1 {
 
 
 body {
-    background-color: #454545;
+    background-color: var(--background-color);;
 }
 .darkmode{
     background-color: black;
@@ -91,15 +91,16 @@ body {
 /* =========== Start of Section Declaration =========== */
 
 section {
-    background-color: #454545;
+    background-color: var(--background-color);
 }
 
 /* =========== End of Section Declaration =========== */
 
 /* =========== Start of Content =========== */
 
+/*Preserved for content changes if needed*/
 .content {
-    margin-left: 5px;   
+    /*margin-left: 5px;*/   
 }
 
 .content h2 {
@@ -227,7 +228,7 @@ article {
     top: 2%;
     left: 0;
     right: 0;
-    background-color: var(--color-scheme-two);
+    background-color: var(--text-box-color);
 
 }
 
@@ -239,7 +240,7 @@ article {
     top: 20%;
     left: 0;
     right: 0;
-    background-color: var(--color-scheme-two);
+    background-color: var(--text-box-color);
 
 }
 
@@ -252,7 +253,7 @@ article {
     top: 26%;
     left: 0;
     right: 0;
-    background-color: var(--color-scheme-two);
+    background-color: var(--text-box-color);
 
 }
 
@@ -265,7 +266,7 @@ article {
     top: 0px;
     left: 0;
     right: 0;
-    background-color: var(--color-scheme-two);
+    background-color: var(--text-box-color);
 
 }
 
@@ -297,7 +298,7 @@ article {
 }
 
 .city-info {
-    background: var(--color-scheme-two);
+    background: var(--text-box-color);
     height: 100px;
     position: absolute;
     width: 100%;
@@ -387,5 +388,10 @@ article {
     border-radius: 50%;
   }
 
+  .search{
+      display: Flex;
+      justify-content: center;
+      align-items: center;
+  }
 /* =========== Start of Contact Me for the Content =========== */
 /* =========== End of Contact Me for the Content =========== */
