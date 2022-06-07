@@ -81,7 +81,7 @@ header h1 {
 
 
 body {
-    background-color: var(--background-color);;
+    background-color: white;
 }
 .darkmode{
     background-color: black;

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,100 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Add style sheet -->
+ 
     <title>Traveler's Advisor</title>
-</head>
-<body>   
-        <!-- For the head of the site that has the "Travel Advisor" -->
-        <header>
-            <div class="title-spacing">
-                <h1>
-                    Travel Advisor
-                </h1>
-            </div>
-                        <!-- Attempting to apply te slide button -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head> <link rel="stylesheet" href="./assets/css/style.css"> <!-- Add style sheet -->
 
-            <!-- Round Switch -->
-            
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
+<body>
+    <!-- For the head of the site that has the "Travel Advisor" -->
+    <header>
+        <div class="title-spacing">
+            <h1>
+                Travel Advisor
+            </h1>
+        </div>
+        <!-- Attempting to apply te slide button -->
+
+        <!-- Round Switch -->
+
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
 
 
 
-        </header>  
-        
-            <!-- Section that will have everything beneath the Traveler Advisor Banner -->
-            <section class="content">
+    </header>
 
-                <!-- Work Section -->
-                <article id="weather-id" class="weather-layout">
+    <!-- Section that will have everything beneath the Traveler Advisor Banner -->
+    <section class="content">
+        <div class="columns">
+            <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
+                <div class="work-card">
 
-                    <!-- This is for the Word Content -->
-                    <aside>
-                        <div class="work-card">
+                    <!-- Insert first files here -->
+                    <!--\assets\images\dummy-pictures-->
+                    <div class="photo">
 
-                            <!-- Insert first files here -->
-                            <!--\assets\images\dummy-pictures-->
-                            <div class="photo">
+                        <img src="./assets/images/grey-background.jpg" alt="run-buddy work page!" class="resizephoto">
+                        <!-- I'm making an attempt to color the overall picture here -->
 
-                                <img src = "./assets/images/grey-background.jpg" alt="run-buddy work page!" class="resizephoto">
-                                    <!-- I'm making an attempt to color the overall picture here -->
-
-                                <div class = overlay>
-
-                                    
-                                </div>
-
-                            <div class="text-box-selection">
-                                <p>Reserve for Drop Down List</p>
-                                <!-- Insert the Drop Box Selection here! -->
-                                <form id = "form" class="city-select">  
-                                    <b> Select a city </b>  
-                                    <select id = "mylist" name="City-choice" class="select-dropdown">  
-                                        <option  value="" selected disabled>Choose the City</option>
-                                        <!-- Tokyo select connect to Japanese yen -->
-                                        <option  id="tokyo" value="Tokyo">Tokyo</option>
-                                        <!-- London select connect to Pound Sterling  -->
-                                        <option  id="london" value="London">London</option>
-                                        <!-- Sydney select connect to the Australian dollar -->
-                                        <option  id="sydney" value="Sydney">Sydney</option>                                         
-                                    </select>
-                                    <!-- <button type="submit" class="btn">Search</button> -->
-                                </form>                                
-                            </div>
-
-                                <div class="time-zone-selected">
-                                    <p>Time Zone Preserved</p>
-                                </div>
-
-                            <div class="currency-box" id="currency">
-                                <p id="currencyDisplay">Currency</p>
-                                <!-- Text Box for Currency -->
-                            </div>
-
-                            </div>
-                            
+                        <div class="text-box-selection">
+                            <p>Reserve for Drop Down List</p>
+                            <!-- Insert the Drop Box Selection here! -->
+                            <form id="form" class="city-select">
+                                <b> Select a city </b>
+                                <select id="mylist" name="City-choice" class="select-dropdown">
+                                    <option value="" selected disabled>Choose the City</option>
+                                    <!-- Tokyo select connect to Japanese yen -->
+                                    <option id="tokyo" value="Tokyo">Tokyo</option>
+                                    <!-- London select connect to Pound Sterling  -->
+                                    <option id="london" value="London">London</option>
+                                    <!-- Sydney select connect to the Australian dollar -->
+                                    <option id="sydney" value="Sydney">Sydney</option>
+                                </select>
+                                <!-- <button type="submit" class="btn">Search</button> -->
+                            </form>
                         </div>
 
-                    </aside>
+                        <div class="time-zone-selected">
+                            <p>Time Zone Preserved</p>
+                        </div>
 
-                    <figure>
+                        <div class="currency-box" id="currency">
+                            <p id="currencyDisplay">Currency</p>
+                            <!-- Text Box for Currency -->
+                        </div>
 
-                        <div class="work-card work-card-two">
+                    </div>
 
-                            <!-- Insert first files here -->
-                            <!--\assets\images\dummy-pictures-->
-                            <div class="photo">
+                </div>
+              
+            </div>
+            <div class="column">
+                <div class="work-card work-card-two">
 
-                                <img src = "./assets/images/blue-cloud-background.jpg"  class="resizephoto">
-                                    <!-- I'm making an attempt to color the overall picture here -->
+                    <!-- Insert first files here -->
+                    <!--\assets\images\dummy-pictures-->
+                    <div class="photo">
 
-                                <div class = overlay>
+                        <img src="./assets/images/blue-cloud-background.jpg" class="resizephoto">
+                        <!-- I'm making an attempt to color the overall picture here -->
 
-                                </div>
+                        <div class=overlay>
 
+                        </div>
+
+                        <div class="text-box">
+                            <h3>
+                                Weather Report Forcast for the Week:
+                            </h3>
+                        </div>
+                        <div class="text-box weather-picture-preserve">
+                            <p>
+                                Reserved this area for the weather for the week. The idea behind it is having 5 days
+                                displayed
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="work-card work-card-two">
+
+
+                    <!-- Insert first files here -->
+                    <!--\assets\images\dummy-pictures-->
+                    <div class="photo">
+
+                        <img src="./assets/images/city-background-image.jpg" class="resizephoto">
+                        <!-- I'm making an attempt to color the overall picture here -->
+
+                        <div class=overlay>
                                 <div class="text-box">
                                     <h3>
                                     Weather Report Forcast for the Week:
@@ -110,60 +128,75 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                        </div>
-        
-                        <div class="work-card work-card-two">
-        
-
-                            <!-- Insert first files here -->
-                            <!--\assets\images\dummy-pictures-->
-                            <div class="photo">
-
-                                <img src = "./assets/images/city-background-image.jpg" class="resizephoto">
-                                    <!-- I'm making an attempt to color the overall picture here -->
-                                
-                                <div class = overlay>
-
-                                    
-                                </div>
-
-                                <div class="text-box">
-                                    <h3>
-                                        City Information
-                                    </h3>
-                                </div>
-
-                                <div class="text-box picture-position-area">
-                                    <p>Reserved for a possible picture to make it look nicer.</p>
-                                </div>
-                                
-                                <div class="text-box-paragraph">
-                                    <p class="city-display city-info">
-                                        It'll display an information for the city in this area.  Just in case, what needs to happen is that a paragraph would be displayed here tellin the information of the city.  What's important, though, is not to have this box increase in size.  Rather, we need to have some sort of scroll on the side in case someone wants to read more information on the city.  At the end of this, it'll also display the link on the bottom of the text.  It'll be preseved here:
-                                        <br/>
-                                        <br/>
-                                        Have the link display here!
-                                    </p>
-                                </div>
-                                
-
-                            </div>
-                            
                         </div>
 
-                    </figure>
+                        <div class="text-box">
+                            <h3>
+                                City Information
+                            </h3>
+                        </div>
 
-                    
-                </article>
+                        <div class="text-box picture-position-area">
+                            <p>Reserved for a possible picture to make it look nicer.</p>
+                        </div>
 
-            </section>
+                        <div class="text-box-paragraph">
+                            <p class="city-display city-info">
+                                It'll display an information for the city in this area. Just in case, what needs to
+                                happen is that a paragraph would be displayed here tellin the information of the city.
+                                What's important, though, is not to have this box increase in size. Rather, we need to
+                                have some sort of scroll on the side in case someone wants to read more information on
+                                the city. At the end of this, it'll also display the link on the bottom of the text.
+                                It'll be preseved here:
+                                <br />
+                                <br />
+                                Have the link display here!
+                            </p>
+                        </div>
+
+                    </div>
+
+                    </div>
+            </div>
+            
+          </div>
+
+        <!-- Work Section -->
+        <article id="weather-id" class="weather-layout">
+
+            <!-- This is for the Word Content -->
+            <aside></aside>
+
+            </aside>
+
+            <figure>
+
+                </div>
+                </div>
+    </section>
+    </div>
+    <div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    </figure>
 
 
-    
+    </article>
+
+    </section>
+
+
+
 
 
 
     <script src="./assets/js/travel.js"></script>
 </body>
+
 </html>
